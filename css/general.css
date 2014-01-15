@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/* CSS Document */
+@-moz-viewport { width: device-width; scale:1;}
+@-ms-viewport { width: device-width; scale:1;}
+@-webkit-viewport { width: device-width; scale:1;}
+@-o-viewport { width: device-width; scale:1;}
+@viewport { width: device-width; scale:1;}
+
+html{
+	/*Stops smapp screen browsers from changing font size*/
+	-moz-text-size-adjust: 100%;	
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-o-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+}
+
+body {
+	background-size:100%;
+	font-size: 100%;
+	font-family:Arial, Helvetica, sans-serif;
+	line-height: 1.5rem;
+}
+
+
+/* *********** Header ****************** */
+
+.masthead {
+	background-color: #666;
+	padding: 6rem 0 0;
+}
+
+
+.nav-btn,
+.nav-btn:link,
+.nav-btn:visited
+{
+	display: block;
+	position: absolute;
+	top: 10px;
+	right: 5%;
+	height:40px;
+	width: 40px;
+	background: #fff url('../images/nav-icon.svg') no-repeat center center;	
+}
+
+.nav-btn:hover,
+.nav-btn:focus,
+.nav-btn:active {
+	background-color:#ccc;
+}
+
+/*styles for nav links */
+
+.nav a,
+.nav a:link,
+.nav a:visited{
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+	text-decoration:none;
+	border-top: 1px solid #fff;
+	
+}
+
+.nav-top{
+	display: none;
+}
+
+.nav-top[data-state="expanded"]{
+	display: block;
+}
+
+/* *********** Main Content****************** */
+
+.wrapper, 
+.copyright {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+.logo {
+	width: 4.5rem;
+	position:absolute;
+	left: 5%;
+	top: 10px;
+}
+
+.box {
+	background-color: #CCC;
+	padding: 1.5rem 6%;
+	margin-bottom: 2rem;
+}
+
+
+.schedule-list{
+	line-height: 1;
+}
+
+.schedule-list strong{
+	display: block;
+	margin-top: 1em;
+}
+
+/* *********** Tables ****************** */
+
+.schedule-table{
+display:none; 
+}
+
+
+thead{
+	background-color: #333;
+	color: #fff;
+}
+
+td{
+	padding: 1em;
+	border: 1px solid #000;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}	
+
+
+
+
+
+	
+
+
